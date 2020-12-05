@@ -46,6 +46,7 @@ background:#29a755;
 .striper-container ul li.active:last-child:before{
 	border-left: 25px solid #29a755;
 }
+
 .striper-container ul li.active:first-child:before{
 	border-right: 25px solid #29a755;
 }
