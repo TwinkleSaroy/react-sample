@@ -12,7 +12,7 @@ crossorigin="anonymous"
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 
-var resp='';
+  var responsiveness='';
 $( document ).ready(function() {
   
   var set;
@@ -27,25 +27,11 @@ $(".star").hover(function(){
 });
 
 function reply_click(clicked_id){
-  debugger
-    var clickedRatingArray = clicked_id.split('_');
-    var rating = clickedRatingArray[1];
-    debugger
-    switch(clickedRatingArray[0]){
-      case "resp":
-        resp = rating;
-        break;
-      default:
-        return;
-    }
       console.log(clicked_id);
-      console.log(resp);
-      debugger
   }
 
   function logValues() {
-    // console.log($('#submit-app').serializeArray());
-    console.log(resp)
+    console.log($('#submit-app').serializeArray());
   }
 
 </script>
@@ -70,11 +56,11 @@ Please rate your satisfaction on the following attributes of our service.
 <p>Responsiveness</p>
 <div class="striper-container">
 <ul id="test">
-<li class="star" id='resp_Extremely Bad' onClick="reply_click(this.id)"><span>Extremely Bad</span></li>
-<li class="star" id ='resp_Bad' onClick="reply_click(this.id)"><span>Bad</span></li>
-<li class="star" id = 'resp_Neutral' onClick="reply_click(this.id)"><span>Neutral</span></li>
-<li class="star" id = 'resp_Good' onClick="reply_click(this.id)"><span>Good</span></li>
-<li class="star" id = 'resp_Extremely Good' onClick="reply_click(this.id)"><span>Extremely Good</span></li>
+<li class="star" id='Extremely Bad' onClick="reply_click(this.id)"><span>Extremely Bad</span></li>
+<li class="star" id ='Bad' onClick="reply_click(this.id)"><span>Bad</span></li>
+<li class="star" id = 'Neutral' onClick="reply_click(this.id)"><span>Neutral</span></li>
+<li class="star" id = 'Good' onClick="reply_click(this.id)"><span>Good</span></li>
+<li class="star" id = 'Extremely Good' onClick="reply_click(this.id)"><span>Extremely Good</span></li>
 </ul>
 </div>
 </div>
